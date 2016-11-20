@@ -19,6 +19,7 @@ mkdir -p $PACKS/$PACKDIR
 echo "Copying file to $PACKDIR"
 cp -r graphics $PACKS/$PACKDIR
 cp -r prototypes $PACKS/$PACKDIR
+cp -r migrations $PACKS/$PACKDIR
 cp data.lua $PACKS/$PACKDIR
 cp control.lua $PACKS/$PACKDIR
 sh info.sh > $PACKS/$PACKDIR/info.json
