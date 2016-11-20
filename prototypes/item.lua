@@ -19,6 +19,16 @@ data:extend({
 		place_result = "short-inserter",
 		order = "a-b",
 		stack_size = 50,
+	},
+	{
+		type = "item",
+		name = "fast-short-inserter",
+		icon = "__short-arms__/graphics/icons/fast-short-inserter.png",
+		flags = { "goes-to-quickbar" },
+		subgroup = "short-inserter",
+		place_result = "fast-short-inserter",
+		order = "a-c",
+		stack_size = 50,
 	}
 	
 })
