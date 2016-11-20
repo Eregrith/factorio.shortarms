@@ -1,0 +1,10 @@
+{
+	"name": "short-arms",
+	"version": "0.1.0",
+	"title": "Short Arms",
+	"author": "Eregrith",
+	"contact": "eregrith@gmail.com",
+	"description": "A useful mechanical arm that drops things on the closest side of transporter belts",
+	"factorio_version": "0.14",
+	"dependencies": [ "base >= 0.4.1" ]
+}
