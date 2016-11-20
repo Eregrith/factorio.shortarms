@@ -24,8 +24,20 @@ cp control.lua $PACKS/$PACKDIR
 sh info.sh > $PACKS/$PACKDIR/info.json
 
 echo "Zipping $PACKDIR"
+echo ""
+echo "--- 7z ---"
 cd $PACKS
 7z a -tZip $ZIPFILE $PACKDIR
+
+echo "--- 7z ---"
+echo ""
+
+find $FACTORIO_MODS_DIR -type f -name 'short-arms_[0-9]\.[0-9]\.[0-9]\.zip' > /dev/null
+if [ $? -eq 0 ]; then
+	echo "Deleting old zip files"
+	find $FACTORIO_MODS_DIR -type f -name 'short-arms_[0-9]\.[0-9]\.[0-9]\.zip' -delete
+fi
+
 
 echo "Publishing $ZIPFILE to $FACTORIO_MODS_DIR"
 cp $ZIPFILE $FACTORIO_MODS_DIR
